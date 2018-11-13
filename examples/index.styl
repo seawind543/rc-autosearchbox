@@ -1,0 +1,60 @@
+$item-height = 48px;
+$remove-btn-font-size = 12px;
+
+.divider {
+    height: 1px;
+    // margin: 1px 0;
+    overflow: hidden;
+    background-color: #e6e6e6;
+}
+
+.item {
+    position: relative;
+    padding: 8px;
+    min-width: 300px;
+    height: $item-height;
+    white-space: nowrap;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    // For in hitory case
+    &.cached {
+        background-color: #eaf6fb;
+    }
+
+    &.active,
+    &.active.cached {
+        background-color: #eeeeee;
+    }
+
+    .logo {
+        margin-right: 8px;
+    }
+
+    .label {
+        display: inline-block;
+        font-weight: bold;
+        vertical-align: sub;
+    }
+
+    .remove-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        height: $item-height;
+        padding: (($item-height - $remove-btn-font-size) / 2) 8px;
+        font-size: $remove-btn-font-size;
+
+        background-color: #ffffff;
+        color: #0366d6;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.input {
+    display: block;
+    width: 100%;
+    padding: 5px 30px 5px 12px;
+    font-size: 13px;
+    color: #222;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+
+    &:focus {
+        border-color: #0096cc;
+        -webkit-transition: all .2s linear 0s;
+        -moz-transition: all .2s linear 0s;
+        -o-transition: all .2s linear 0s;
+        -ms-transition: all .2s linear 0s;
+        transition: all .2s linear 0s;
+        outline: 0;
+    }
+
+    // Hide build-in clear-button at IE
+    &::-ms-clear,
+    &::-ms-reveal {
+        display: none;
+    }
+
+    // placeholder at IE 10+
+    &:-ms-input-placeholder {
+        color: rgb(186, 186, 186);
+    }
+}
+
+.close {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    padding: 0;
+    margin: 0;
+    line-height: 20px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    font-size: 20px;
+    font-weight: normal;
+    color: #999999;
+    text-shadow: none;
+    opacity: 1;
+    outline: none;
+}
