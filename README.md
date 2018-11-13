@@ -2,6 +2,10 @@
 
 A simple component for build autocomplete with customized menu.
 
+Handle mouse event, keyboard event and touch event. Reference `Usage` part for detail.
+
+Demo: https://seawind543.github.io/rc-autosearchbox/
+
 ## Installation
 
 1. Run `npm install` to install required packages.
