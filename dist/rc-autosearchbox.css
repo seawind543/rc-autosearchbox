@@ -1,5 +1,5 @@
-/*! react-auto-search-box v0.1.0 | (c) 2018 Mark Lin. | MIT | https://github.com/seawind543/web-storage */
-.auto-search-box---input---1w92d {
+/*! rc-autosearchbox v0.0.5 | (c) 2018 Mark Lin. | MIT | https://github.com/seawind543/rc-autosearchbox */
+.rc-autosearchbox---input---1w92d {
   display: block;
   width: 100%;
   padding: 5px 30px 5px 12px;
@@ -10,7 +10,7 @@
   border: 1px solid #ccc;
   border-radius: 3px;
 }
-.auto-search-box---input---1w92d:focus {
+.rc-autosearchbox---input---1w92d:focus {
   border-color: #0096cc;
   -webkit-transition: all 0.2s linear 0s;
   -moz-transition: all 0.2s linear 0s;
@@ -23,14 +23,14 @@
   transition: all 0.2s linear 0s;
   outline: 0;
 }
-.auto-search-box---input---1w92d::-ms-clear,
-.auto-search-box---input---1w92d::-ms-reveal {
+.rc-autosearchbox---input---1w92d::-ms-clear,
+.rc-autosearchbox---input---1w92d::-ms-reveal {
   display: none;
 }
-.auto-search-box---input---1w92d:-ms-input-placeholder {
+.rc-autosearchbox---input---1w92d:-ms-input-placeholder {
   color: #bababa;
 }
-.auto-search-box---close---18PJG {
+.rc-autosearchbox---close---18PJG {
   position: absolute;
   top: 6px;
   right: 8px;
@@ -50,7 +50,7 @@
   filter: none;
   outline: none;
 }
-.auto-search-box---container---11KMX {
+.rc-autosearchbox---container---11KMX {
   display: none;
   position: absolute;
   top: 100%;
@@ -71,10 +71,10 @@
   -moz-background-clip: padding;
   background-clip: padding-box;
 }
-.auto-search-box---container---11KMX.auto-search-box---opened---1gWAS {
+.rc-autosearchbox---container---11KMX.rc-autosearchbox---opened---1gWAS {
   display: block;
 }
-.auto-search-box---container---32eEd {
+.rc-autosearchbox---container---32eEd {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -82,12 +82,12 @@
   display: inline-block;
   position: relative;
 }
-.auto-search-box---container---32eEd *,
-.auto-search-box---container---32eEd *:before,
-.auto-search-box---container---32eEd *:after {
+.rc-autosearchbox---container---32eEd *,
+.rc-autosearchbox---container---32eEd *:before,
+.rc-autosearchbox---container---32eEd *:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 
-/*# sourceMappingURL=react-auto-search-box.css.map*/
+/*# sourceMappingURL=rc-autosearchbox.css.map*/
