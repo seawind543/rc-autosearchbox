@@ -22,7 +22,7 @@ class AutoSearchBox extends PureComponent {
             scrollActiveItemIntoView: false
         };
 
-        // To avoid make autocomplete search to sensitive:
+        // To avoid make autocomplete search too sensitive:
         // 1. Apply throttle function from lodash
         // 2. Do not re-search again when keywords are same as last time
         const {
