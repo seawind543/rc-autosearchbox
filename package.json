@@ -1,6 +1,6 @@
 {
   "name": "rc-autosearchbox",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "React AutoSearchBox. A simple component for build autocomplete with customized menu.",
   "main": "lib/index.js",
   "files": [
@@ -67,17 +67,17 @@
     "file-loader": "1.1.11",
     "find-imports": "0.5.2",
     "html-webpack-plugin": "3.2.0",
-    "http-server": "0.10.0",
+    "http-server": "^0.12.3",
     "jsdom": "11.11.0",
     "nib": "1.1.2",
     "style-loader": "0.21.0",
     "stylint": "1.5.9",
     "stylint-loader": "1.0.0",
     "stylus-loader": "3.0.2",
-    "tap": "12.0.1",
+    "tap": "14.10.7",
     "trendmicro-ui": "0.5.2",
     "url-loader": "1.0.1",
     "webpack": "3.11.0",
-    "webpack-dev-server": "2.11.2"
+    "webpack-dev-server": "^3.1.11"
   }
 }
