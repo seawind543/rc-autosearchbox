@@ -10,7 +10,7 @@ import styles from './index.styl';
 
 const name = 'React AutoSearchBox';
 
-const apps = [
+const appList = [
     { id: 0, name: 'App 0' },
     { id: 1, name: 'App 1' },
     { id: 2, name: 'App 2' },
@@ -35,9 +35,21 @@ const apps = [
 
 
 class App extends PureComponent {
+    constructor (props) {
+        super(props);
+
+        const { appList } = props;
+        this.state = { apps: appList };
+    }
+
     actions = {
         handleSearch: (keyword) => {
-
+            const { appList } = this.props;
+            this.setState({
+                apps: appList.filter(app => {
+                    return app.name.toLowerCase().search(keyword.toLowerCase()) !== -1;
+                })
+            });
         },
         getItemDisplayedName: (app) => {
             return app.name;
@@ -54,6 +66,8 @@ class App extends PureComponent {
     };
 
     render() {
+        const { apps } = this.state;
+
         return (
             <div>
                 <Navbar name={name} />
@@ -105,6 +119,6 @@ class App extends PureComponent {
 }
 
 ReactDOM.render(
-    <App />,
+    <App appList={appList} />,
     document.getElementById('container')
 );
